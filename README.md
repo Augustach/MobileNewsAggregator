@@ -7,7 +7,7 @@ This is a boilerplate project with react native router and predictable state con
 - [React Redux](https://github.com/reactjs/react-redux)
 - [Redux Thunk](https://github.com/gaearon/redux-thunk)
 - [React Native Router](https://github.com/aksonov/react-native-router-flux)
-- [Lodash](https://lodash.com/)
+
 
 ### Requirements
 
@@ -21,7 +21,7 @@ This is a boilerplate project with react native router and predictable state con
 
 Clone repository:
 ```sh
-git clone git@github.com:boozzd/react-native-boilerplate.git
+git clone git@github.com:Augustach/MobileNewsAggregator.git
 ```
 After run:
 ```sh
