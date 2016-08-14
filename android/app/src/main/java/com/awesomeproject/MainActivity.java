@@ -1,14 +1,13 @@
 package com.awesomeproject;
 
 import com.facebook.react.ReactActivity;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 
 import java.util.Arrays;
 import java.util.List;
 
-import com.awesomeproject.pedometer.StepCounterService;
-import com.awesomeproject.pedometer.StepCounterOldService;
 
 import android.os.Bundle;
 import android.content.Intent;
@@ -41,20 +40,12 @@ public class MainActivity extends ReactActivity {
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
             new MainReactPackage(),
-            new RNPedometerPackage(this)
+            new VectorIconsPackage()
         );
     }
 
     @Override
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        Boolean can = StepCounterOldService.deviceHasStepCounter(this.getPackageManager());
-        if (!can) {
-            startService(new Intent(this, StepCounterService.class));
-        } else {
-            startService(new Intent(this, StepCounterOldService.class));
-        }
-
-
     }
 }

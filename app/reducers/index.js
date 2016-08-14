@@ -1,9 +1,7 @@
-import counter from './counter';
 import router from './router';
-import health from './health';
+import news from './news';
 
 export {
-  counter,
   router,
-  health
+  news
 };

@@ -1,4 +1,5 @@
-import React, {
+import React from 'react';
+import  {
   View,
   Text,
   StyleSheet,
@@ -8,40 +9,27 @@ import React, {
 
 import { Actions } from 'react-native-router-flux';
 import {bindActionCreators} from 'redux';
-import * as healthActions from '../actions/healthActions';
+
 import { connect } from 'react-redux';
 
-import Health from '../services/health';
+
 
 class Launch extends Component {
   constructor(props) {
     super(props);
   }
-  componentDidMount() {
-    Health().then((data) => {
-      this.props.actions.update(data);
-      Actions.main();
-    }).catch((err) => {
-      console.log(err);
-    });
-  }
+
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>
-          Loading ...
+          Loading 23
         </Text>
       </View>
     );
   }
 }
-
-export default connect(state => ({
-  }),
-  (dispatch) => ({
-    actions: bindActionCreators(healthActions, dispatch)
-  })
-)(Launch);
+s
 
 const styles = StyleSheet.create({
   container: {
