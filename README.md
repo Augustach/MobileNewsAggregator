@@ -1,6 +1,6 @@
 # React Native Example App
 
-This is a boilerplate project with react native router and predictable state container which includes simple bar chart and pedometer.
+This is a mobile app with react native router for https://github.com/FullStackNN/MeanNewsAggregator-.git.
 ### Dependencies
 
 - [Redux](https://github.com/reactjs/redux)
