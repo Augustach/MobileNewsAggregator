@@ -11,4 +11,4 @@ const AwesomeProject = () => {
   );
 }
 
-AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
+AppRegistry.registerComponent('MobileNewsAggregator', () => AwesomeProject);
